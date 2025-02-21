@@ -5,8 +5,8 @@
 */
 
 :root {
-  --sfwindow: #1b1d2b;
-  --sfsecondary: #222436;
+  --sfwindow: #C0CAF5;
+  --sfsecondary: #ffffff;
 }
 
 /* Tabs colors  */
@@ -42,3 +42,6 @@
 .sidebar-placesTree {
   background-color: var(--sfwindow) !important;
 }
+
+/* bookmark-item width */
+#personal-bookmarks .bookmark-item {max-width: 100px !important}

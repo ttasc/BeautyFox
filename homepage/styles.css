@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
 :root {
-  --bg: #1b1d2b;
+  --bg: #C0CAF5;
   --fg: #7AA2F7;
   --secondaryFg: #C0CAF5;
   --containerBg: #222436;
-  --searchBg: var(--containerBg);
+  --searchBg: var(--bg);
   --scrollbarColor: #565F89;
+  --borderRadius: 30px;
   --fontFamily: 'Roboto Mono', monospace;
 }
 
@@ -29,7 +30,7 @@ body {
   font-size: 3.5rem;
   font-weight: 600;
   font-family: var(--fontFamily);
-  color: var(--fg);
+  color: var(--containerBg);
   margin-bottom: 0.25em;
 }
 
@@ -53,9 +54,9 @@ body {
   border: solid 0px var(--searchBg);
   font-family: var(--fontFamily);
   font-size: 4rem;
-  color: var(--fg);
+  color: var(--containerBg);
   outline: none;
-  border-radius: 3px;
+  border-radius: var(--borderRadius);
   margin-bottom: 1em;
   text-align: center;
 }
@@ -64,7 +65,7 @@ body {
   width: 30%;
   background-color: var(--containerBg);
   padding: 1em;
-  border-radius: 3px;
+  border-radius: var(--borderRadius);
   font-family: var(--fontFamily);
   color: var(--fg);
   text-align: center;
@@ -101,7 +102,7 @@ body {
 .bookmark-set {
   padding: 1em;
   background-color: var(--containerBg);
-  border-radius: 3px;
+  border-radius: var(--borderRadius);
   font-family: var(--fontFamily);
   font-size: 0.85rem;
   width: 25%;
@@ -134,12 +135,14 @@ body {
 }
 
 .bookmark-title {
+  text-align: center;
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--fg);
   margin: 0em 0em 0.35em 0em;
 }
 .bookmark {
+  text-align: center;
   text-decoration: none;
   color: var(--secondaryFg);
   display: block;
