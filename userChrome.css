@@ -6,7 +6,8 @@
 
 :root {
   --sfwindow: #C0CAF5;
-  --sfsecondary: #ffffff;
+  --sfsecondary: #222436;
+  --inactivetab: #1b1d2b;
 }
 
 /* Tabs colors  */
@@ -21,20 +22,12 @@
   > .tab-stack
   > .tab-background[selected='true'] {
   background-image: none !important;
-  background-color: var(--toolbar-bgcolor) !important;
+  background-color: var(--sfsecondary) !important;
 }
 
 /* Inactive tabs color */
 #navigator-toolbox {
-  background-color: var(--sfwindow) !important;
-}
-
-/* Window colors  */
-:root {
-  --toolbar-bgcolor: var(--sfsecondary) !important;
-  --tabs-border-color: var(--sfsecondary) !important;
-  --lwt-sidebar-background-color: var(--sfwindow) !important;
-  --lwt-toolbar-field-focus: var(--sfsecondary) !important;
+    background-color: var(--inactivetab) !important;
 }
 
 /* Sidebar color  */
