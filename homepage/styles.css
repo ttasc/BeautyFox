@@ -61,10 +61,10 @@ body {
   text-align: center;
 }
 
-.weather-container {
-  width: 30%;
+.greeter-container {
+  width: auto;
   background-color: var(--containerBg);
-  padding: 1em;
+  padding: 1em 4em;
   border-radius: var(--borderRadius);
   font-family: var(--fontFamily);
   color: var(--fg);
